@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Desarrollador</title>
+    <link rel="stylesheet" href="./src/less/style.less">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght|300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Perfil de Desarrollador</h1>
+    </header>
+
+    <main>
+        <section class="perfil">
+            <div class="foto">
+                <img src="Fotos/Foto_Perfil.jpeg" alt="Foto Perfil">
+                <h2>Diego Muñoz</h2>
+            </div>
+
+            <div class="biografia">
+                <h2>Biografía</h2>
+                <ul>
+                    <li><p>Soy estudiante de la Universidad Católica de Honduras</p></li>
+                    <li><p>Actualmente estoy cursando la carrera de Ingeniería en Ciencias de la Computación.</p></li>
+                    <li><p>Realizó páginas web con fines académicos.</p></li>
+                    <li><p>Tengo experiencia trabajando con HTML, CSS, JavaScript para el desarrollo Web.</p></li>
+                    <li><p>Mi especialidad es la gestión de bases de datos y desarrollo de aplicaciones de escritorio.</p></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="portafolio">
+            <h1>Portafolio de Proyectos</h1>
+        </section>
+
+        <section class="carousel" id="caruselPrincipal">
+            <div class="track">
+                <div class="slide">
+                    <div class="image"><img src="Fotos/Proyecto1.png"></div>
+                    <div class="action">
+                        <h2>Proyecto 1</h2>
+                        <p>Aplicación para gestionar contabilidad</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="image"><img src="Fotos/Proyecto2.png"></div>
+                    <div class="action">
+                        <h2>Proyecto 2</h2>
+                        <p>Página Web para restaurante</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacto">
+            <div class="contacto-info">
+                <h1>Contáctame</h1>
+                <p><strong>Correo:</strong> dmmunoz06@gmail.com</p>
+                <p><strong>Teléfono:</strong> +504 95497157</p>
+                <p><strong>Ubicación:</strong> Honduras</p>
+            </div>
+
+            <div class="formulario">
+                <h1>Formulario de Contacto</h1>
+                <form id="contactForm">
+                    <div id="txtNombreDiv">
+                        <label>Nombre</label>
+                        <input type="text" id="txtNombre">
+                    </div>
+                    <div id="txtCorreoDiv">
+                        <label>Correo</label>
+                        <input type="email" id="txtCorreoElectronico">
+                    </div>
+                    <label>Mensaje</label>
+                    <textarea></textarea>
+                    <button type="submit" id="btnEnviar">Enviar</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Tarea perfil de desarrollador</p>
+    </footer>
+
+    <script type="module" src="./landingpage.js"></script>
+</body>
+</html>

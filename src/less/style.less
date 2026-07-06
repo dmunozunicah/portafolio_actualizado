@@ -1,0 +1,248 @@
+@import "./variables.less";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: @fondo-pagina;
+    color: @texto-cuerpo;
+    line-height: 1.6;
+}
+
+header {
+    background: @gris-claro;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.08);
+    
+    h1 {
+        font-size: 40px;
+        color: @texto-titulos;
+        font-weight: 700;
+    }
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 50px;
+}
+
+.foto {
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    background: @fondo-tarjeta;
+    border-radius: @borde-redondo;
+    box-shadow: 0px 4px 10px rgba(0,0,0,.06);
+    
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 6px solid #CBD5E1;
+    }
+    
+    h2 {
+        margin-top: 15px;
+        color: @texto-oscuro;
+        font-size: 28px;
+    }
+}
+
+.biografia {
+    width: 70%;
+    background: @fondo-tarjeta;
+    padding: 30px;
+    border-radius: @borde-redondo;
+    box-shadow: 0px 4px 10px rgba(0,0,0,.06);
+    
+    h2 {
+        margin-bottom: 20px;
+        color: #4B5563;
+    }
+    
+    p {
+        color: @texto-biografia;
+    }
+}
+
+.portafolio {
+    padding: 30px;
+    text-align: center;
+    
+    h1 {
+        font-size: 35px;
+        color: @texto-titulos;
+    }
+}
+
+.carousel {
+    width: 90%;
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: @borde-redondo;
+    background: @fondo-tarjeta;
+    box-shadow: 0px 5px 15px rgba(0,0,0,.08);
+    margin-bottom: 50px;
+}
+
+.track {
+    display: flex;
+    height: 100%;
+    position: relative;
+    left: 0;
+    transition: all .5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    gap: 30px;
+}
+
+.image {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    img {
+        max-width: 100%;
+        max-height: 100%;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        border-radius: @borde-mediano;
+    }
+}
+
+.action {
+    width: 35%;
+    background: @gris-medio;
+    padding: 25px;
+    border-radius: @borde-mediano;
+    box-shadow: 0px 3px 10px rgba(0,0,0,.08);
+    
+    h2 {
+        margin-bottom: 15px;
+        color: @texto-titulos;
+    }
+    
+    p {
+        color: @texto-suave;
+        line-height: 1.7;
+    }
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: @texto-suave;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 100;
+    
+    &:hover {
+        background: @texto-oscuro;
+    }
+}
+
+.btnleft { left: 20px; }
+.btnright { right: 20px; }
+
+.contacto {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 50px;
+}
+
+.contacto-info, .formulario {
+    background: @fondo-tarjeta;
+    padding: 30px;
+    border-radius: @borde-redondo;
+    box-shadow: 0px 4px 10px rgba(0,0,0,.06);
+}
+
+.contacto-info { width: 40%; }
+.formulario { width: 60%; }
+
+.contacto {
+    h1 {
+        margin-bottom: 25px;
+        color: @texto-titulos;
+    }
+    p {
+        color: @texto-biografia;
+        margin-top: 15px;
+    }
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: @borde-pequeno;
+    background: @fondo-input;
+    color: @texto-titulos;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+button {
+    background: @texto-suave;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: @borde-pequeno;
+    cursor: pointer;
+    font-size: 16px;
+    
+    &:hover {
+        background: @texto-oscuro;
+    }
+}
+
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    background: @gris-claro;
+    text-align: center;
+    color: @texto-oscuro;
+}
+
+.error {
+    border: 2px solid #ef4444 !important;
+}
+.error-text {
+    color: #ef4444;
+    font-size: 0.85rem;
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
